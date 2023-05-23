@@ -100,18 +100,59 @@ a:hover {
 } */
 
 .header {
-	background-color: #917FB3;
+	/* position: relative; */
+	background-color: #FFD8D8;
 	height: 1100px;
 }
 
+.header .inner {
+	position: relative;
+}
 
 .header .title {
-    /* display: inline-block; */
-	font-size: 300px;
-    margin: 0 auto;
-    text-align: center;
-	padding-top: 20%;
-	letter-spacing: 30px;
+	position: absolute;
+	top: 300px;
+	left: 200px;
+}
+
+.header .title .name1 {
+	display: inline-block;
+	width: 318px;
+	height: 359px;
+	background:url(../img/H.png) no-repeat 50% 50%;
+	background-size: 318px 359px;
+}
+
+.header .title .name2 {
+	display: inline-block;
+	width: 318px;
+	height: 359px;
+	background:url(../img/A.png) no-repeat 50% 50%;
+	background-size: 318px 359px;
+}
+
+.header .title .name3 {
+	display: inline-block;
+	width: 318px;
+	height: 359px;
+	background:url(../img/E.png) no-repeat 50% 50%;
+	background-size: 318px 359px;
+}
+
+.header .title .name4 {
+	display: inline-block;
+	width: 318px;
+	height: 359px;
+	background:url(../img/U.png) no-repeat 50% 50%;
+	background-size: 318px 359px;
+}
+
+.header .title .name5 {
+	display: inline-block;
+	width: 318px;
+	height: 359px;
+	background:url(../img/N.png) no-repeat 50% 50%;
+	background-size: 318px 359px;
 }
 
 @media (max-width: 1920px) and (min-width: 1080px) {
@@ -121,7 +162,8 @@ a:hover {
 }
 
 .header .bar {
-	
+	/* position: absolute;
+	bottom: 20px; */
 	height: 30px;
 	background-color: #2A2F4F;
 }
