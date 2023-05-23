@@ -91,81 +91,135 @@ a:hover {
 /* flex */
 /* position */
 /* 반응형 */
-/* .header .inner {
-	-o-border-radius: 15px;
-	-ms-border-radius: 15px;
-	-moz-border-radius: 15px;
-	-webkit-border-radius: 15px;
-	border-radius: 15px;
-} */
-
-.header {
+.spot {
 	/* position: relative; */
 	background-color: #FFD8D8;
+}
+
+.spot .inner {
+	padding: 100px 0;
 	height: 1100px;
 }
 
-.header .inner {
+.spot .title {
 	position: relative;
+	margin: 0 auto;
 }
 
-.header .title {
+.spot .title [class^="name"] {
+	display: block;
 	position: absolute;
-	top: 300px;
-	left: 200px;
-}
-
-.header .title .name1 {
-	display: inline-block;
 	width: 318px;
 	height: 359px;
-	background:url(../img/H.png) no-repeat 50% 50%;
+}
+
+.spot .title .name1 {
+	top: 0;
+	left: calc(50% - 540px);
+	background: url(../img/H.png) no-repeat 50% 50%;
+	background-size: 318px 359px;
+	z-index: 1;
+}
+
+.spot .title .name2 {
+	top: 0;
+	left: calc(50% - 330px);
+	background: url(../img/A.png) no-repeat 50% 50%;
 	background-size: 318px 359px;
 }
 
-.header .title .name2 {
-	display: inline-block;
-	width: 318px;
-	height: 359px;
-	background:url(../img/A.png) no-repeat 50% 50%;
+.spot .title .name3 {
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: url(../img/E.png) no-repeat 50% 50%;
+	background-size: 318px 359px;
+	z-index: 2;
+}
+
+.spot .title .name4 {
+	top: 0;
+	left: calc(50% + 20px);
+	background: url(../img/U.png) no-repeat 50% 50%;
+	background-size: 318px 359px;
+	z-index: 1;
+}
+
+.spot .title .name5 {
+	top: 0;
+	left: calc(50% + 200px);
+	background: url(../img/N.png) no-repeat 50% 50%;
 	background-size: 318px 359px;
 }
 
-.header .title .name3 {
-	display: inline-block;
-	width: 318px;
-	height: 359px;
-	background:url(../img/E.png) no-repeat 50% 50%;
-	background-size: 318px 359px;
+.banner {
+	margin: 0 auto;
 }
 
-.header .title .name4 {
-	display: inline-block;
-	width: 318px;
-	height: 359px;
-	background:url(../img/U.png) no-repeat 50% 50%;
-	background-size: 318px 359px;
+.banner strong {
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	font-size: 20px;
+	color: navy;
 }
 
-.header .title .name5 {
-	display: inline-block;
-	width: 318px;
-	height: 359px;
-	background:url(../img/N.png) no-repeat 50% 50%;
-	background-size: 318px 359px;
+.banner .scroll {
+	display: flex;
+	position: relative;
+	height: 200px;
+	margin: auto;
+	background-color: lightsalmon;
+	overflow: hidden;
+	z-index: 1;
 }
 
-@media (max-width: 1920px) and (min-width: 1080px) {
-	.header {
-		background-color: #917FB3;
+.banner .scroll_title {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: 100%;
+	white-space: nowrap;
+	transform: scale(2);
+	transition: all 1s ease;
+}
+
+.banner .scroll_title > div {
+	display: flex;
+	animation: scrollText 15s infinite linear;
+}
+
+.banner .scroll_title p {
+	margin: 0;
+	font-size: 40px;
+	color: white;
+	transition: all 2s ease;
+}
+
+.banner .scroll_title p a {
+	text-decoration: none;
+	color: white;
+}
+
+.banner .scroll_title p a:hover {
+	-webkit-text-stroke: 1px white;
+	color: transparent;
+}
+
+/*div:hover {
+  animation-play-state: paused;
+  }*/
+@keyframes scrollText {
+	from {
+		transform: translateX(0%);
 	}
-}
-
-.header .bar {
-	/* position: absolute;
-	bottom: 20px; */
-	height: 30px;
-	background-color: #2A2F4F;
+	to {
+		transform: translateX(-50%);
+	}
 }
 
 /* @media (max-width: 767px) {
@@ -179,5 +233,6 @@ a:hover {
 		background-color: yellow;
 	}
 } */
+/*# sourceMappingURL=portfolio.css.map */
 
 /*# sourceMappingURL=portfolio.css.map */
