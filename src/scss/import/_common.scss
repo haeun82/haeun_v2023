@@ -1,14 +1,92 @@
-.spot {
-	/* position: relative; */
-	background-color: #FFD8D8;
+/* header */
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 60px;
+	z-index: 10;
+	border-bottom: 1px solid #000;
+	box-sizing: border-box;
+	
 
 	.inner {
-		padding: 100px 0;
-		height: 1100px;
+		position: relative;
+		padding: 0 25px;
 	}
 
-	.title {
+	.logo {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 20px;
+		border-right: 1px solid #000;
+		
+		.btn_home {
+			display: block;
+			padding: 10px 40px 10px 20px;
+		}
+	}
+
+	.btn_wrap {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 20px;
+
+		.btn_download {
+			display: inline-block;
+			// width: 200px;
+			// height: 60px;
+			padding: 10px 20px 10px 40px;
+			box-sizing: border-box;
+			text-align: center;
+			vertical-align: middle;
+
+			&::before {
+				content:'#';
+				display: inline-block;
+				vertical-align: middle;
+				width: 35px;
+				height: 34px;
+				background: url(../img/icon_star.png) no-repeat 0 0;
+				background-size: 279px 272px; //바꾸기
+			}
+		}
+
+		.btn_text {
+			font-size: 24px;
+			font-family: 'Outfit-Bold';
+			line-height: 40px;
+		}
+	}
+}
+
+
+/* spot */
+.spot {
+	/* position: relative; */
+	background-color: #5CBEF5;
+
+	.inner {
+		height: 100vh;
+		box-sizing: border-box;
+		padding: 160px 0 100px;
+		
+	}
+
+	.title_sub_text {
+		text-align: center;
+		font-size: 70px;
+		font-family: 'Outfit-Bold';
+		color:#FED510;
+		text-shadow: 4px 4px #000; 
+	}
+
+	.title_main_text {
 		position: relative;
+		height: 400px;
 		margin: 0 auto;
 		// position: absolute;
 		// top: 50%;
@@ -62,24 +140,26 @@
 			// z-index: 1;
 		}
 	}
+	.spot_text {
+		text-align: center;
+		font-size: 25px;
+		font-family: 'Outfit-SemiBold';
+	}
 }
 
 .banner{
 	margin: 0 auto;
 
-	strong {
-		display: block;
-		margin: 20px auto;
-		text-align: center;
-		font-size: 20px;
-		color: navy;
-	}  
 	  .scroll {
 		display: flex;
 		position: relative;
-		height: 200px;
+		height: 60px;
 		margin: auto;
-		background-color: lightsalmon;
+		padding: 20px 0; 
+		box-sizing: border-box;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		background-color: #FED510;
 		overflow: hidden;
 		z-index: 1;
 	}
@@ -93,28 +173,29 @@
 		width: 100%;
 		height: 100%;
 		white-space: nowrap;
-		transform: scale(2);
-		transition: all 1s ease;
-	}
-	  .scroll_title >  div {
-		display: flex;
-		animation: scrollText 15s infinite linear;
-	}
-	  .scroll_title p {
-		margin: 0;
-		font-size: 40px;
-		color: rgba(255,255,255,1);
-		transition: all 2s ease;
 
-		a {
-			text-decoration:none;
-			color:white;
-
-			&:hover{
-				-webkit-text-stroke: 1px white;
-				color: transparent;
+		p {
+			margin: 0;
+			font-size: 26px;
+			color: rgba(0,0,0,1);
+			transition: all 2s ease;
+	
+			.banner_text {
+				padding: 0 20px;
+				text-decoration:none;
+				color:#000;
+				font-style:italic;
+	
+				&:hover{
+					-webkit-text-stroke: 0.8px #000;
+					color: transparent;
+				}
 			}
 		}
+	}
+	  .rolling_wrap {
+		display: flex;
+		animation: scrollText 15s infinite linear;
 	}
 }
   

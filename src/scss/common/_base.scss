@@ -86,3 +86,21 @@ a:hover {
 
 
 // font
+
+/* font */
+@font-face {
+    font-family: 'Outfit-Bold';
+    src: url("../font/Outfit-bold.ttf") format("ttf");
+}
+@font-face {
+    font-family: 'Outfit-ExtraLight';
+    src: url("../font/Outfit-ExtraLight.ttf") format("ttf");
+}
+@font-face {
+    font-family: 'Outfit-Medium';
+    src: url("../font/Outfit-Medium.ttf") format("ttf");
+}
+@font-face {
+    font-family: 'Outfit-SemiBold';
+    src: url("../font/Outfit-SemiBold.ttf") format("ttf");
+}
